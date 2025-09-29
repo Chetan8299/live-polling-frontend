@@ -1,8 +1,5 @@
 import { useEffect, useState } from "react";
 import { socket } from "../utils/socket";
-import ChatBox from "../components/ChatBox";
-import Timer from "../components/Timer";
-import ResultCard from "../components/ResultCard";
 import TeacherResultCard from "../components/TeacherResultCard";
 import PollHistory from "../components/PollHistory";
 
@@ -331,7 +328,7 @@ export default function TeacherPage() {
                 </div>
             )}
 
-            {pollActive && <ChatBox />}
+            {/* {pollActive && <ChatBox />} */}
 
             <PollHistory
                 isOpen={showHistory}
